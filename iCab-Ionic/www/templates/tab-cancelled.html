@@ -1,0 +1,57 @@
+
+<ion-view view-title="Cancelled">
+  <ion-content >
+    <div class="list" collection-repeat="BookingStslist in BookingStslists" >
+		<div class="item"> 
+			<div class="row">
+				<div class="col col-30">Ride ID</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.icab_id}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">From</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.start_from}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">To</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.end_to}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">DOJ</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.date_of_journey}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">TOJ</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.time_of_journey}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Cab Name</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.cab_id}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Driver Name</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.driver_name}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Status</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{BookingStslist.status}}</div>
+			</div>
+		</div>
+	</div>
+   
+  </ion-content>
+</ion-view>

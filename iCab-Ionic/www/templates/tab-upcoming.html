@@ -1,0 +1,57 @@
+
+<ion-view view-title="Upcoming">
+  <ion-content>
+    <div class="list" collection-repeat="upcomingRidelist in upcomingRidelists" >
+		<div class="item"> 
+			<div class="row">
+				<div class="col col-30">Ride ID</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.icab_id}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">From</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.start_from}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">To</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.end_to}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">DOJ</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.date_of_journey}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">TOJ</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.time_of_journey}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Cab Name</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.cab_id}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Driver Name</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.driver_name}}</div>
+			</div>
+			
+			<div class="row">
+				<div class="col col-30">Status</div>
+				<div class="col">:</div>
+				<div class="col col-60">{{upcomingRidelist.status}}</div>
+			</div>
+		</div>
+	</div>
+  
+  </ion-content>
+</ion-view>

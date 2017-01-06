@@ -1,0 +1,29 @@
+
+
+      <ion-nav-bar class="bar-assertive">
+              <ion-nav-buttons side="left">
+              <button class="button button-small icon-left button-clear button-light" ng-click="goBack()">
+                <i class="icon ion-arrow-left-c"></i> </button>
+      </ion-nav-buttons>
+      </ion-nav-bar>
+  
+      <ion-tabs class="tabs-icon-center tabs-color-active-energized">
+
+            <!-- Pending Tab -->
+             <ion-tab title="Pending" href="#/bookingSts/pending/1">
+          <ion-nav-view name="tab-pending"></ion-nav-view>
+           </ion-tab>
+
+            <!-- Confirmed Tab -->
+          <ion-tab title="Confirmed" href="#/bookingSts/confirmed/2">
+             <ion-nav-view name="tab-confirmed"></ion-nav-view>
+           </ion-tab>
+
+            <!-- Cancelled Tab -->
+        <ion-tab title="Cancelled" href="#/bookingSts/cancelled/3">
+           <ion-nav-view name="tab-cancelled"></ion-nav-view>
+           </ion-tab>
+            
+      </ion-tabs> 
+ 
+

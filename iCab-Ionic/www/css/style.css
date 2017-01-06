@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.scroll-content{
+    background: url("../img/bg-img.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+.popup-body {
+
+  padding: 20px;
+  text-align: justify;
+}
+
+.popup-buttons .button {
+
+    background: url("../img/bg-img.jpg") no-repeat center center fixed; ;
+}
+
+.popup {
+
+    border: 2px solid lightgoldenrodyellow;
+
+}

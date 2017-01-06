@@ -1,0 +1,22 @@
+<ion-view view-title="Sign-In" name="login-view">
+        
+  <ion-content class="padding">
+    <form ng-submit="doLogin(loginInfo)">   
+      <div class="list list-inset">
+              <label class="item item-input">
+                <i class="icon ion-person"></i>&nbsp;&nbsp;
+                <input type="text" placeholder="Passenger id" ng-model="loginInfo.passengerId">
+              </label>
+              <label class="item item-input">
+                <i class="icon ion-android-phone-portrait"></i>&nbsp;&nbsp;
+                 <input type="password" placeholder="Mobile number" ng-model="loginInfo.passengerMobile">
+              </label>                  
+      </div>
+
+      <div class="row">
+            <button class="col col-33 button-small col-offset-33 button button-assertive" type = "submit" >Login</button>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>

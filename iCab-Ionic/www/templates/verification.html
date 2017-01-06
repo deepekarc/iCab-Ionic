@@ -1,0 +1,28 @@
+<ion-view view-title="Verification" name="verification-view">
+        
+      <ion-content class="padding">
+        
+                <ion-card>
+                    <ion-card-content class="col col-offset-5">
+                        Please enter the verification code for the iCAB Mobile Application.
+                    </ion-card-content>
+                </ion-card>
+                <br>
+                <div class="list list-inset">
+                    <label class="item item-input">    
+                        <input type="text" class="col col-50 col-offset-33" placeholder="Vertification Code" ng-model="data.vOTP">
+                    </label>
+                </div>
+                <div class="row">
+                    <button class="col col-33 button button-small button-assertive" ng-click="doVerifyOTP(data.vOTP)">Verify OTP</button>
+                    <button class="col col-33 button-small col-offset-33 button button-assertive" ng-click="doResend()">Resend</button>
+                </div>
+                <br>
+               <ion-card>
+                    <ion-card-content class="col col-offset-5">
+                        Verification code has been sent to your email-id.
+                    </ion-card-content>
+                </ion-card>
+          
+      </ion-content>
+</ion-view>

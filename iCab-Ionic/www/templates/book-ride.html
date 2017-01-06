@@ -1,0 +1,38 @@
+<ion-view view-title="Book Ride" name="book-ride-view">
+
+          <ion-nav-bar class="bar-assertive">
+              <ion-nav-buttons side="left">
+              <button class="button button-small icon-left button-clear button-light" ng-click="goBack()">
+                <i class="icon ion-arrow-left-c"></i> </button>
+        </ion-nav-buttons>
+        </ion-nav-bar>
+
+      <ion-content class="padding">
+  
+            <div class="list list-inset">
+                  <label class="item item-input">
+                  <i class="icon ion-location"></i>&nbsp;&nbsp;
+                  <input type="text" placeholder="PickUp Location" ng-model="data.pickUpLoc">
+                  </label>
+            
+                  <label class="item item-input">
+                        <i class="icon ion-location"></i>&nbsp;&nbsp;
+                  <input type="text" placeholder="Destination Location" ng-model="data.destiLoc">
+                  </label>
+            
+                  <label class="item item-input">
+                        <i class="icon ion-calendar"></i>&nbsp;&nbsp;
+                        <input type="date" ng-model="data.date">
+                  </label>
+            
+                  <label class="item item-input">
+                        <i class="icon ion-clock"></i>&nbsp;&nbsp;
+                        <input type="time" ng-model="data.time">
+                  </label>      
+            </div>
+            <div class="row">
+                  <button class="col col-33 button-small col-offset-33 button button-assertive" data-ng-click="doBookNow(data.pickUpLoc,data.destiLoc,data.date,data.time)">Book Now</button>
+            </div>
+     
+      </ion-content>
+</ion-view>
